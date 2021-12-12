@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prithvi's Fitness Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" class="CSS/css">
+<style>
+    body{
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: white; 
+        margin: 0px;
+        padding: 0px;
+        background: url('Images/gymbg2.jpg');
+    }
+    .left{
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .mid{
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 60px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25ps;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 25px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: black;
+    }
+    .left img{
+        width: 197px;
+        height: 73px;
+    }
+    .left div{
+        line-height: 20px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .btn{
+        font-family: 'Baloo Tammudu 2', cursive;
+        margin: 10px;
+        background-color: black;
+        color: white;
+        padding: 0px 15px;
+        border: 2px solid black;
+        border-radius: 14px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(49, 48, 48);
+    }
+    .container{
+        /* border: 3px solid gray; */
+        margin: 95px 45px;
+        padding: 37px 80px;
+        width: 40%;
+        border-radius: 35px;
+    }
+    .form-group input{
+        font-family: 'Baloo Tammudu 2', cursive;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 0px;
+        border: 2px solid black;
+        margin: 14px auto;
+        border-radius: 15px;
+        font-size: 19px;
+    }
+    .container h1{
+        text-align: center;
+        color: white;
+    }
+    .container button{
+        display: block;
+        width: 75%;
+        margin-top: 25px;
+        margin-left: 78px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left Box for Logo -->
+        <div class="left">
+            <div>
+                <img src="Images/logo1.jpg" alt="">                
+            </div>
+            <div>Prithvi's Fitness Club</div>
+        </div>
+        <!-- Mid box for NavBar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Centre</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right Box for Buttons -->
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                E-mail Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Bokaro NOW !!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your E-Mail">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
